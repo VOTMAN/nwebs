@@ -1,0 +1,27 @@
+---
+import "../styles/global.css"
+import SideBar from "./Sidebar"
+---
+
+<nav class="hidden md:visible md:flex justify-between px-10 py-5 border-b-2 border-gray-500 min-w-screen" id="Header" >
+    <div class="">
+        <ol class="flex gap-10 justify-center items-center">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/novels">Novels</a></li>
+        </ol>
+    </div>
+    <div>
+        <p><a href="/contact">Contact</a></p>
+    </div>
+</nav>
+<SideBar client:only="react"/>
+
+<script>
+    import {gsap} from "gsap"
+    gsap.fromTo("#Header", 
+        {opacity: -1},
+        {opacity: 1, duration: 1.5, ease: "power2.in"}
+    )
+</script>
+

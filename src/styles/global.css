@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Playfair Display Variable', serif;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+#custom-cursor {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        /* background-color: #000; */
+        border: 2px solid black;
+        pointer-events: none;
+        transition: transform 0.2s ease, opacity 0.1s ease;
+        transform: translate(-50%, -50%);
+        will-change: transform, opacity;
+        z-index: 9999;
+      }
+
+      /* Hover effect for links */
+     
+
+     
+      a:hover #custom-cursor {
+        transform: scale(1.5) translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6);
+      }
+
+      /* Bounce effect */
+      @keyframes bounce {
+        0% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        25% {
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
