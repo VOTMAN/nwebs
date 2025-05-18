@@ -44,16 +44,16 @@ const Sidebar = () => {
         className="hidden opacity-100 w-[100%] h-[90%] absolute bg-black justify-center items-center flex-col z-10"
       >
         <p className="text-white">
-          <a href="/">Home</a>
+          <a href="/nwebs/">Home</a>
         </p>
         <p className="text-white">
-          <a href="/about">About Me</a>
+          <a href="/nwebs/about">About Me</a>
         </p>
         <p className="text-white">
-          <a href="/novels">Novels</a>
+          <a href="/nwebs/novels">Novels</a>
         </p>
         <p className="text-white">
-          <a href="/contact">Contact</a>
+          <a href="/nwebs/contact">Contact</a>
         </p>
       </div>
     </>
